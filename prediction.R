@@ -224,17 +224,16 @@ for(i in 1:length(test[["calendar_updated"]])){
   
 }
 
-##### ERROR: empty row in data???? ----- need to input NA in test data first
+# for zipcode
 for(i in 1:length(test[["zipcode"]])){
   if (test[["zipcode"]][i] == "10080"|test[["zipcode"]][i] == "10550"|test[["zipcode"]][i] == "11363"){
     test[["zipcode"]][i] <- levels(test[["zipcode"]])[which.max(table(test[["zipcode"]]))]
   }
   
 }
+                
 #input NA for test data
 summary(test$zipcode)
-test$zipcode[is.na(test$zipcode)] <- NULL #not working
-test$zipcode[is.na(test$zipcode)] <- "None" #not working
 test$zipcode[is.na(test$zipcode)] <- '11211' #using most frequent value, this worked,but not so reasonable
 
 
