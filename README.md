@@ -1,4 +1,17 @@
-# NYC-airbnb-rental-pricing-prediction
-kaggle project
+# Content: Supervised Learning
+## Project: Airbnb Rental Price Prediction 
 
-Airbnb rental price using over 90 variables on the property, host, and past reviews.
+### Install
+This project was done using R-studio,which requires installation of the following libraries:
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(corrplot)
+library(glmnet)
+library(gbm)
+library(caret)
+library(Formula)
+library(lattice)
+library(Hmisc)
+
