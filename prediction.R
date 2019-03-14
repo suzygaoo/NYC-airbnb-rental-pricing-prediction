@@ -71,7 +71,7 @@ library(caret)
 
 ###impute missing value using Hmisc(example)
 ###train$host_response_rate = as.numeric(train$host_response_rate)
-###impute(train$host_response_rate, median(train$host_response_rate))--->not working???
+###impute(train$host_response_rate, median(train$host_response_rate))
 ###summary(train$host_response_rate)
 
 #impute "1" to all NA values to beds
