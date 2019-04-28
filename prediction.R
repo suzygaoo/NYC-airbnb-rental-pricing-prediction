@@ -7,13 +7,6 @@ dim(train)
 names(train)
 
 
-######Combine test and train data
-######test$price <- NA
-######data <- bind_rows(train, test)
-######train.row <- 1:nrow(train)
-######test.row <- (1 + nrow(train)):(nrow(train) + nrow(test))
-
-
 #explore missing value on train data
 temp <- sapply(train, function(x)  sum(is.na(x)))
 miss <- sort(temp, decreasing=T)
